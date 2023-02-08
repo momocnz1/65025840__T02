@@ -4,63 +4,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planner</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap top-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href='https://css.gg/bell.css' rel='stylesheet'>
-    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
-    <link href='https://css.gg/card-hearts.css' rel='stylesheet'>
+    <!--front-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bai Jamjuree" />
+    <!--icon-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+    <link href='https://css.gg/toggle-off.css' rel='stylesheet'>
+    <!--css-->
     <link rel="stylesheet" href="calen.css">
 </head>
 <body >
-    <div >
     <nav class="navbar navbar-default">
         <div class="container-fluid" id="top">
-          <div class="navbar-header" >
-             <a class="navbar-brand" id="text" >Planner</a>  
-          </div>
-          <ul class="nav navbar-nav" >
-            <li><a href="#" id="text1" class="btn btn-outline-light" >log in</a></li>
-          </ul>
-          <ul class="nav navbar-nav" style="float: left;" >
-             <li><a href="#"><i class="gg-bell" id="bell"></i></a></li>
-          </ul>
-          <ul class="nav navbar-nav" style="float: right;">
-            <li><a href="#" id="text2" class="btn btn-outline-light" style="font-size:14px;">
-                <i class="gg-card-hearts" style="float: left;"></i>fav</a></li>
-            <li><a href="#" id="text3" class="btn btn-outline-light" style="font-size:14px;">
-                <i class="gg-shopping-cart" style="float: left;" ></i>shop</a>
-            </li> 
-         </ul>  
+            <div class="navbar-header">
+                <a class="navbar-brand" id="text">Planner</a>  
+            </div>
+            <ul class="nav navbar-nav" >
+                <li><a href="#" id="log" class="btn btn-outline-light" >log in</a></li>
+            </ul>
+            <ul class="nav navbar-nav" style="float: left;" >
+                <li><a href="#"><iconify-icon icon="bi:bell" style="color: #f9f9f9;" width="26" height="20"></iconify-icon></a></li>
+            </ul>
+            <ul class="nav navbar-nav" style="float: right;">
+                <li><a href="#" id="fav" class="btn btn-outline-light">
+                <iconify-icon icon="el:heart-alt" style="color: #bbbed7;" width="20" height="20"  id="heart"></iconify-icon>fav</a>
+                </li>
+                <li><a href="#" id="shop" class="btn btn-outline-light">
+                <iconify-icon icon="ic:round-shopping-cart" style="color: #c8cce0;" width="20" height="20" id="shp"></iconify-icon>shop</a>
+                </li> 
+            </ul>  
         </div>     
     </nav>
-    </div>
     <section class="row">
         <div id="plans" class="plans">
-        <a href="#">home</a>
-        <a href="#">bullet journal</a>
-        <a href="#">calender</a>
-        <a href="#">video</a>
-        <a href="#">shops</a>
-        <a href="#">to do list</a>
+        <a href="#" style="color: #5F689F;">home</a>
+        <a href="#" style="color: #5F689F;">bullet journal</a>
+        <a href="#" style="color: #5F689F;">calender</a>
+        <a href="#" style="color: #5F689F;">video</a>
+        <a href="#" style="color: #5F689F;">shops</a>
+        <a href="#" style="color: #5F689F;">to do list</a>
         </div>
         <aside>
-            <div class="day1">
-                <table >
-                    <thead>
-                        <tr>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                            <th>4</th>
-                            <th>5</th>
-                            <th>6</th>
-                            <th>7</th>
-                            <th>8</th>
-                            <th>9</th>
+            <div id="papa"><a href="#">
+                <table class="day1" style="font-size:14px;"  >
+                        <tr >
+                            <th>01</th>
+                            <th>02</th>
+                            <th>03</th>
+                            <th>04</th>
+                            <th>05</th>
+                            <th>06</th>
+                            <th>07</th>
+                            <th>08</th>
+                            <th>09</th>
                             <th>10</th>
                             <th>11</th>
                             <th>12</th>
@@ -83,11 +86,20 @@
                             <th>29</th>
                             <th>30</th>
                             <th>31</th>
-                            <th></th>
+                            <th id="mood">
+                                <i class="gg-toggle-off"></i>
+                            </th>
+                            
                         </tr>
-                    </thead>
-                </table>
+               </table></a> 
+            
             </div>
+            <div id="tools1"></div>
+            <div class="calen" id="calen">
+                
+                <div id="year" class="btn btn-default"class="calen" onclick="year()" >
+                    <a href="#" style="color: #ffffff;">2023</a>
+                </div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -120,8 +132,8 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                <div></div>
-                <div></div>
+                
+            </div>
             
         </aside>
     </section>
