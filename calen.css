@@ -1,0 +1,149 @@
+#planner{
+    width: 100%;
+}
+#top{
+    width: 100%;
+}
+.container-fluid{
+   margin: auto;
+}
+#text{
+    color: #ffffff;}
+#text1{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top-width: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+    border: #C8CCE0 ;
+    background-color: #C8CCE0;
+    text-align: center;
+    text-decoration: none;}
+#text2{
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: 5px;
+    border-bottom-width: 5px;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    height: 40px;
+    color: #ffffff;
+    border: #C8CCE0 ;
+    background-color: #C8CCE0;}
+#text3{
+    margin-left: 5px;
+    width: 85px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+    color: #ffffff;
+    border: #C8CCE0 ;
+    background-color: #C8CCE0;}
+#top{
+    background-color: #5F689F;}
+#bell{
+    color: #ffffff;}
+.gg-bell,
+.gg-bell::before {
+ border-top-left-radius: 100px;
+ border-top-right-radius: 100px}
+.gg-bell {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ transform: scale(var(--ggs,1));
+ border: 2px solid;
+ border-bottom: 0;
+ width: 12px;
+ height: 12px}
+.gg-bell::after,
+.gg-bell::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute}
+.gg-bell::before {
+ background: currentColor;
+ width: 2px;
+ height: 2px;
+ top: -4px;
+ left: 4px}
+.gg-bell::after {
+ border-radius: 2px;
+ width: 14px;
+ height: 8px;
+ border: 6px solid transparent;
+ border-top: 1px solid transparent;
+ box-shadow:
+ inset 0 0 0 4px,
+ 0 -2px 0 0;
+ top: 14px;
+ left: -3px;
+ border-bottom-left-radius: 100px;
+ border-bottom-right-radius: 100px} 
+.gg-shopping-cart {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(var(--ggs,1));
+    width: 19px;
+    height: 20px;
+    background:
+    linear-gradient(
+    to left,currentColor 12px,
+    transparent 0)
+    no-repeat -1px 6px/18px 2px,
+    linear-gradient(
+    to left,currentColor 12px,
+    transparent 0)
+    no-repeat 6px 14px/11px 2px,
+    linear-gradient(
+    to left,currentColor 12px,
+    transparent 0)
+    no-repeat 0 2px/4px 2px,
+    radial-gradient(
+    circle,currentColor 60%,
+    transparent 40%)
+    no-repeat 12px 17px/4px 4px,
+    radial-gradient(
+    circle,currentColor 60%,
+    transparent 40%)
+    no-repeat 6px 17px/4px 4px}
+.gg-shopping-cart::after,
+.gg-shopping-cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 2px;
+    height: 14px;
+    background: currentColor;
+    top: 2px;
+    left: 4px;
+    transform: skew(12deg)} 
+.gg-shopping-cart::after {
+    height: 10px;
+    top: 6px;
+    left: 16px;
+    transform: skew(-12deg)} 
+#plans{
+    text-align: center;
+}
+#planner{
+    background-color: #f9f9f9;
+}
+.day1{
+    width: 1000px;
+    height: 20px;
+    border: 2px solid #ABA0A0;
+    border-collapse: collapse;
+    margin: auto;
+    justify-content: space-around;
+    background-color: #545B6E;
+    color: #ffffff;
+}
