@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>    
+    <!--front-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bai Jamjuree" />
+    <!--icon-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+    <link href='https://css.gg/toggle-off.css' rel='stylesheet'>
+    <!--css-->
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <ul class="navtop">
+        <li id="title">Planner</li>
+        <li><a class="navb" href="log">Hello dokidoki</a></li>
+        <li><a class="navb" id="noti"  href="noti"><iconify-icon icon="bi:bell" style="color: #f9f9f9;" width="20" height="20" ></iconify-icon></a></li>
+        <li id="shp"><a class="navb" href="shop"><iconify-icon icon="ic:round-shopping-cart" style="color: #c8cce0;" width="20" height="20" id="shop"></iconify-icon>shop</a></li>
+        <li id="fav"><a class="navb" href="fav"><iconify-icon icon="el:heart-alt" style="color: #bbbed7;" width="20" height="20"  id="heart"></iconify-icon>fav</a></li>
+    </ul>
+    <section class="row">
+        <a href="ho" style="color: #5F689F;">home</a>
+        <a href="bu" style="color: #5F689F;">bullet journal</a>
+        <a href="cal.html" style="color: #5F689F;">calender</a>
+        <a href="vi" style="color: #5F689F;">video</a>
+        <a href="sh" style="color: #5F689F;">shops</a>
+        <a href="to" style="color: #5F689F;">to do list</a>
+    </section>
+    <aside>
+        <div id="tod" onclick="pus()">
+            <p id="toa" style="color: #FFFFFF; font-size: 40px;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Today</p>
+        </div>
+        <div id="mont" >
+            <p>February  2023</p>
+        </div>
+        <div class="day">
+            <a style="color: #E0E2F1;">SUN</a>
+            <a style="color: #E0E2F1;">MON</a>
+            <a style="color: #E0E2F1;">TUE</a>
+            <a style="color: #FFFFFF;">WED</a>
+            <a style="color: #E0E2F1;">THU</a>
+            <a style="color: #E0E2F1;">FRI</a>
+            <a style="color: #E0E2F1;">SAT</a>
+            <br><a style="color: #E0E2F1;" id="d1"class="da">29</a>
+            <a style="color: #E0E2F1;" id="d2"class="da">30</a>
+            <a style="color: #E0E2F1;" id="d3"class="da">31</a>
+            <a style="color: #FFFFFF;" id="d4"class="da">1</a>
+            <a style="color: #E0E2F1;" id="d5"class="da">2</a>
+            <a style="color: #E0E2F1;" id="d6"class="da">3</a>
+            <a style="color: #E0E2F1;" id="d7"class="da">4</a>
+        </div>
+        <div id="br1" style="color: #FFFFFF;">(แสดงวันสำคัญ)</div>
+        <div id="call">
+            <a id="date" style="color:#F1F2FF;">Date</a>
+            <p id="mo" style="color:#5F689F">February</p>
+            <div id="sa"><a style="color: #5F689F;" id="s">SUN</a>
+            <a style="color: #5F689F;" id="m">MON</a>
+            <a style="color: #5F689F;" id="te">TUE</a>
+            <a style="color: #5F689F;" id="we">WED</a>
+            <a style="color: #5F689F;" id="th">THU</a>
+            <a style="color: #5F689F;" id="f">FRI</a>
+            <a style="color: #5F689F;" id="sta">SAT</a>
+        </div>
+            <div class="aa1">
+            <a id="a29">29</a>
+            <a id="a30">30</a>
+            <a id="a31">31</a>
+            <a id="a1"> 1</a>
+            <a id="a2">2</a>
+            <a id="a3">3</a>
+            <a id="a4">4</a>
+            <br><a id="a5">5</a>
+            <a id="a6">6</a>
+            <a id="a7">7</a>
+            <a id="a8">8</a>
+            <a id="a9">9</a>
+            <a id="a10">10</a>
+            <a id="a11">11</a>
+            <br><a id="a12">12</a>
+            <a id="a13">13</a>
+            <a id="a14">14</a>
+            <a id="a15">15</a>
+            <a id="a16">16</a>
+            <a id="a17">17</a>
+            <a id="a18">18</a>
+            <br><a id="a19">19</a>
+            <a id="a20">20</a>
+            <a id="a21">21</a>
+            <a id="a22">22</a>
+            <a id="a23">23</a>
+            <a id="a24">24</a>
+            <a id="a25">25</a>
+            <br><a id="a26">26</a>
+            <a id="a27">27</a>
+            <a id="a28">28</a>
+            <a id="a1">1</a>
+            <a id="a2">2</a>
+            <a id="a3">3</a>
+            <a id="a4">4</a>
+        </div>
+        </div>
+        <div id="ac" >
+            <div class="ac"><p id="titlet"></p><p id="tome"></p><p id="datt"></p><p id="sax"></p>
+            </div>
+            <div class="ac"><p id="titlet"></p><p id="tome"></p><p id="datt"></p><p id="sax"></p>
+            </div>
+            <div class="ac"><p id="titlet"></p><p id="tome"></p><p id="datt"></p><p id="sax"></p>
+            </div>
+            <div class="ac"><p id="titlet"></p><p id="tome"></p><p id="datt"></p><p id="sax"></p>
+            </div>
+            
+        </div>
+        <div>
+        <div id="aa"><p style="color: #6A6C86;">Title</p></div>
+        <input type="text" id="ti"  >
+        <div id="aaa"><p style="color: #6A6C86;">Time</p></div>
+        <input type="time" id="tim" style="text-align: center; color: #6A6C86;">
+        <div id="aaaa"><p style="color: #6A6C86;">Date</p></div>
+        <input type="date" id="dat" style="text-align: center; color: #6A6C86;">
+        
+        <input id="save" type="submit" onclick="save()" value="Save"style="color: #FFFFFF;font-weight: 400;font-size: 16px;font-family: 'Paytone One';line-height: 25px;cursor: pointer;"></div>
+        <div id="how"><p style="color: #5F689F;">HOW ARE YOU TODAY ?</p></div>
+        <div>
+        <div id="emo" >
+            <input type="image" id="happy" src="happy.png" width="54" height="54" onclick="sub()">
+            <input type="image" id="smile" src="happy1.png" width="54" height="54" onclick="sm()">
+            <input type="image" id="sceptic" src="sceptic.png" width="54" height="54" onclick="cn()">
+            <input type="image" id="sad" src="sad.png" width="54" height="54" onclick="da()">
+            <input type="image" id="sad1" src="sad (1).png" width="54" height="54" onclick="mo()">
+        </div>
+        </div>
+        <input id="mood" type="button" onclick="mood()" value="Mood Statistics" style="color: #FFFFFF;font-weight: 400;font-size: 20px;font-family: 'Paytone One';line-height: 25px; cursor: pointer;">
+    </aside>
+    <script src="calen.js"></script>
+</body>
+</html>
