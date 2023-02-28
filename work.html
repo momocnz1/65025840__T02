@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    <label for="">Name</label>
+    <input type="text" onfocus="FocusBox(this)" onblur="BlurBox(this)" >
+    </p>
+    <label for="">Surname</label>
+    <input type="text" onfocus="FocusBox(this)" onblur="BlurBox(this)">
+    <p>Date of Birth</p>
+    <p>
+        <label for="birthday"></label>
+        <input type="date" id="birthday" name="birthday">
+    </p>
+    <p>
+        <label or="">Select your language</label>
+        <select name="" id="menu" onchange="SelectedMenu()">
+        <option value="select">--select--</option>
+        <option value="C">C</option>
+        <option value="JAVA">JAVA</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        </select>
+    </p>
+    <p><button onclick="disPlayText()">submit</button></p>
+
+    <script src="work.js"></script>
+
+</body>
+</html>
